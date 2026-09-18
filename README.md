@@ -27,3 +27,7 @@ Location: Regents Park, Johannesburg
 
 ---
 This website was created as part of a web development project for Mnyamane Power Services.
+1.  W3Schools - CSS Variables: https://www.w3schools.com/css/css3_variables.asp
+2.  W3Schools - Responsive Media Queries: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+3.  Logo image: Created on Canva / or your source
+4.  Content: Own writing based on electrical services
