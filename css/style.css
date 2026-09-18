@@ -1,3 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+:root{
+  --blue: #0056b3;
+  --yellow: #ffcc00;
+  --white: #ffffff;
+  --dark: #1a1a1a;
+  --light: #f4f7fb;
+}
 
+body{
+  color: var(--dark);
+  background-color: var(--light);
+  line-height: 1.6;
+}
 
+header{
+  background: var(--blue);
+  color: var(--white);
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header h1{ font-size: 24px; }
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a{
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover{
+  background: var(--yellow);
+  color: var(--dark);
+}
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 5%;
+  background: var(--white);
+}
+.hero h2{ font-size: 40px; color: var(--blue); }
+.hero p{ margin: 10px 0 20px; }
+
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 5%;
+}
+.service-card{
+  background: var(--white);
+  color: var(--dark);
+  border: 2px solid transparent;
+  border-left: 6px solid var(--blue);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 86, 179, 0.1);
+  transition: all 0.3s ease;
+}
+.service-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 86, 179, 0.2);
+}
+.service-card:focus{ outline: 3px solid var(--yellow); }
+.service-card:active{ transform: scale(0.97); }
+
+.btn{
+  background-color: var(--blue);
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 6px 15px rgba(0, 86, 179, 0.3);
+  transition: all 0.3s ease;
+}
+.btn:hover{ background-color: var(--yellow); color: var(--dark); border-color: var(--yellow); }
+.btn:focus{ outline: 3px solid var(--dark); }
+.btn:active{ transform: scale(0.95); }
 
